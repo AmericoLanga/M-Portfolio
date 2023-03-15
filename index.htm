@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portifolio</title>
+    <link rel="stylesheet" href="_css/style.css">
+</head>
+<body>
+    <div id="interface">
+
+
+    <!-- menu principal -->
+   <div id="menu">
+
+        <nav>
+          <h2>Portifo<span>lio</span></h2>
+              <ul class="cabecalho-link">
+                     <li><a href="#artigo-1">Inicio</a></li>
+                     <li><a href="#artigo-2">Sobre mim</a></li>
+                     <li><a href="#artigo-3">Servicos</a></li>
+                     <li><a href="#artigo-4">Contacto</a></li>  
+              </ul>
+
+             <div>
+                <a href="#" class="btn-subscript">SubsCript</a>
+               <!-- Menu cabecalho Link -->
+             </div>
+        </nav>
+
+        <aside>
+            <!-- icones acima do menu Principal -->
+            <div class="icon-menu">
+                
+                <div  class="mobile-menu"  onclick="abremenu()" >
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+
+            </div>
+
+            <!-- barra do menu responsivo, o espaco onde os links ficarao! -->
+            <div class="barra-menu">
+                <ul>
+                    <li><a href="#artigo-1">Inicio</a></li>
+                    <li><a href="#artigo-2">Sobre mim</a></li>
+                    <li><a href="#artigo-3">Servicos</a></li>
+                    <li><a href="#artigo-4">Contacto</a></li>
+                    
+                </ul>
+                   <div>
+                       <a href="#" class="btn-subscript">SubsCript</a>
+                       <!-- Menu cabecalho Link -->
+                   </div>
+            </div>
+        </aside>
+
+    </div>
+
+
+
+<script>
+
+    // linkando com html, o ONCLICK
+function abremenu(){
+   let barramenuaberto = document.querySelector('div.barra-menu') 
+
+
+   if (barramenuaberto.style.width == "0px")
+   {
+    barramenuaberto.style.width = "150px"
+   } else {
+        barramenuaberto.style.width = "0px"
+       }
+    //    a Sima temos uma condicao composta
+   
+}
+</script>
+<!-- a sima Menu principal -->
+
+
+
+
+
+
+
+
+
+
+<!-- artigo numero 1 -->
+<article>
+<a name="artigo-1"></a>
+
+
+     <!-- temos class Background Da pagina principal onde a foto principal esta! -->
+    <div class="background">
+       
+        <!-- A baixo e a area da minha Apresentao -->
+       <div class="apresentacao">
+            <h4>Ola, Meu nome é</h4>
+            <h1><span>Am</span>érico <span>Estévao</span></h1>
+            <h3>Eu sou um Desenvolvedor Front-End</h3>   
+       </div> 
+
+       <div class="container-btn">
+          <form>
+               <input type="email" name="email" id="mail" size="8" placeholder="Envie seu email">
+               <input type="submit" name="submit" value="Comecar">
+          </form>
+      </div>
+
+   
+    </div>
+
+
+</article>
+
+
+
+
+
+
+
+
+<!-- artigo numero 2 -->
+<article id="artigo2">
+<a name="artigo-2"></a>   
+  
+
+<!-- Essa E a Area que falo sobre MIM -->
+    <section class="background-sobr-n">
+
+        <!-- DEntro dessa div contem duas partes da FOTO, e Texto sobre MIM -->
+        <div class="main-sobre">
+            <div class="img"> 
+                 
+                <!-- Area FOTO -->
+                <figure class="foto-legenda">
+                     <img src="_imagens/my img.jpg" alt="">
+              
+                        <figcaption>
+                             <h4>ola, esteja bem vindo a nos conhecer!</h4>
+                       </figcaption>
+                
+                </figure>
+            
+            </div>
+
+            <!-- Area Texto -->
+            <div class="text-sobre">
+                            <h2>Sobre-Mim</h2>
+                      <h5>Desen<span>volvedor</span></h5>
+                <p>Iniciando no desenvolvimento em 2022 me reconheço como
+                    entusiasta em novas tecnologias do mercado com aprendizado
+                    adquirido dia pôs dia!
+                    Me sinto preparado para qualquer mudança, pôs é isso que
+                    quero! Possuo foco em apreender essas linguagens -HTML-CSS-JAVASCRIPT-PHP-REACT-TypeScript-!
+                    Meu foco é pensar fora da caixa! me considero
+                    ágil e consistente em apreender novas linguagens!</p>
+                <button  type="button"><a href="langaamericoestevao@gmail.com">Vamos conversar</button>
+                
+
+            </div>
+       
+
+        </div>
+    </section>
+
+
+</article>
+
+
+
+
+
+
+
+
+
+
+
+<!-- artigo numero 3 -->
+<article id="artigo3">
+<a name="artigo-3"></a>
+
+
+    <div class="container-servicos"> 
+         <!-- div a sima e tipo section pai de todos os cards que  colocamos -->
+
+                     <div class="titulo">  <h2>Meus-<span>Serviços</span></h2> </div> 
+                     <!-- o titulo fora de cards caixas -->
+
+
+
+
+
+        <div class="caixas">
+                          <!--a caixa onde estaram todos so cards -->
+ 
+                    <div class="card" >
+                        <!-- card 1 dentro dela estaram os textos etc -->
+                             <i class="fa fa-bars"></i>
+                             <h5>Desenvolvedor Front-End</h5>
+                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut odit nam optio mollitia ipsum aliquid itaque nisi aspernatur,  hic laboriosam inventore quo cupiditate rem vero sit officiis voluptatum accusamus! Eligendi!</p>
+           
+                    </div>
+
+           
+             <div class="card-js">
+              <!-- card 2 dentro dela estaram os textos etc -->
+                    <div class="content">
+                        <i class="fa fa-user"></i>
+                       <h5>Desenvolvedor Front-End</h5>
+                       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut odit nam optio mollitia ipsum aliquid itaque nisi aspernatur, hic laboriosam inventore quo cupiditate rem vero sit officiis voluptatum accusamus!   Eligendi!</p>
+                       <button class="btn-servicos">Ler Mais</button>
+                    </div>
+            
+                    <div class="verm"></div>
+             </div>
+          
+         
+
+
+           <script>
+          // script do botao mais de jS javascript
+
+                let verm = window.document.querySelector('.verm')
+                let cardjs = window.document.querySelector('.card-js')
+  
+                verm.onclick = function() {
+                cardjs.classList.toggle('active')
+            }
+     
+
+           </script>
+
+
+              <div class="card">
+                <!-- card 3 dentro dela estaram os textos etc -->
+                    <i class="fa fa-bel"></i>
+                    <h5>Desenvolvedor Front-End</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut odit nam optio mollitia ipsum aliquid itaque nisi aspernatur, hic laboriosam inventore quo cupiditate rem vero sit officiis voluptatum accusamus! Eligendi!</p>
+             
+              </div>
+    </div>
+
+    </div>
+</article>   
+
+
+
+
+
+
+
+
+
+
+
+<!-- artigo numero 4 -->
+<article id="artigo4">
+ <a name="artigo-4"></a>   
+   <!-- foooootttter -->
+   
+   <!-- area fale com migo footer -->
+             <div class="me-contacte">
+                   <p>Contacte-me Criarei um bom e Lindo Front-End para voce!</p>
+                  <button class="btn-contacto">Enviar Mensagem</button>
+ 
+             </div>
+
+
+     <footer>
+         <h6>Am</span>érico <span>Estévao</h6>
+          <p>Para me conhecer e saber mais sobre me - por favor clik no Link a baixo <br> para aderir as minhas Redes socias</p>
+        
+          <!-- links e icones das minhas contas -->
+          <div class="redes-socias">
+              <a href=""><img src="_imagens/facebook-app-symbol.png" alt="icone de facebook"></a>
+              <a href=""><img src="_imagens/twitter (1).png" alt="icone de twitter"></a>
+              
+          </div>
+            <!-- icnes de links de redes socias! -->
+
+
+          <div class="end">
+              <p><span>Américo-Estevao-Langa</span></p>
+          </div>
+
+
+     </footer>
+</article>
+
+
+
+<script>
+    
+</script>
+
+
+
+</div>
+</body>
+</html>

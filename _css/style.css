@@ -1,0 +1,1998 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    /* configuracao de tudo */
+}
+
+/* interface corpo principal */
+#interface {
+    width: 90%;
+    margin: auto;
+    overflow-x: hidden;
+}
+
+
+
+
+/* area Menu area Menu area Menu area Menu area Menu area Menu area Menu  */
+
+
+
+div#menu {
+    position: fixed;
+    z-index: 2;
+    
+    
+    width: 100%;
+}
+
+nav{
+    height: 60px;
+    width: 90%;
+    background-color: #333;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 18px;
+   
+    padding-left: 8px;
+    padding-right: 8px;
+    /* estilizando a nossa nav do menu */
+    
+}
+
+nav h2{
+    margin-top: -10px;
+    margin-left: 40px;
+    color: rgb(255, 255, 255);
+    font-size: 35px;
+    
+    letter-spacing: 2px;
+    /* teg a sima letter spacing serve para dar espacamento entre as letra de uma frase ex   p o r t i f o l i o! */
+}
+span {
+    color: rgb(0, 47, 255);
+}
+
+nav ul li {
+  
+    display: inline-block;
+    padding: 5px 20px;
+    /* a sima padding top e padding right */
+    list-style: none;
+
+}
+.cabecalho-link {
+    margin-left: -60px;
+}
+
+nav ul li a {
+    
+    position: relative;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+nav ul li a:hover {
+    color:  rgb(0, 255, 242);
+    transition: 0.3s;
+    padding-bottom: 5px;
+}
+/* borda dinamica de li */
+
+li a::after {
+    content: "";
+    width: 0%;
+    height: 4px;
+    
+    background-color: rgb(0, 238, 255);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+} li a:hover::after {
+    width: 100%;
+    transition: 0.5s ease-in-out;
+}
+
+
+/* button */
+div .btn-subscript {
+    
+    background-color:  rgb(0, 47, 255);
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 15px 15px;
+    border-radius: 30px;
+    margin: 20px 20px;
+    
+   
+    
+}
+.btn-subscript:hover {
+  background-color: none;
+  
+}
+
+
+
+
+
+
+
+/* Menu hamburguer */
+
+#menu aside {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    overflow: hidden;
+    
+    
+  
+}
+
+
+
+.barra-menu {
+    height: 100vh;
+    width: 0px;
+    
+    background-color: rgb(104, 104, 104);
+    transition: 0.3s all;
+}
+.barra-menu ul li {
+    padding: 15px;
+    list-style: none;
+   
+    
+}
+.barra-menu ul li a {
+    color: white;
+    text-decoration: none;
+    
+}
+
+
+/* tres bordas para menu hamburguer */
+.icon-menu .mobile-menu {
+    cursor: pointer;
+    padding-right: 30px;
+    margin-top: 20px;
+}
+.icon-menu .mobile-menu div {
+    width: 20px;
+    height: 2px;
+    background-color: white;
+    margin: 5px 18px;
+
+}
+
+
+
+
+
+
+
+
+/* media qury */
+
+@media screen and (max-width:375px){
+  
+    .icon-menu .mobile-menu {
+        cursor: pointer;
+        padding-right: 40px;
+        margin-top: 20px;
+    }
+    .icon-menu .menu {
+       display: block;
+
+    }
+    #barra-menu ul li {
+        height: 100vh;
+        z-index: 1;
+       
+    }
+    #barra-menu {
+        opacity: 1;
+    }
+
+
+    /* apresentacao */
+    .apresentacao {
+    
+        padding-top: 45%;
+    }
+    .apresentacao h4 {
+        font-size: 11px;
+    }
+    .apresentacao h1{
+          font-size: 35px;
+    }
+    .apresentacao h3 {
+        font-size: 17px;
+    }
+
+    .background-sobr-n {
+       height: 700px;
+        margin-top: -90px;
+        margin-bottom: 0px;
+      
+    }
+
+
+    .container-btn form {
+        padding: 14px 30px;
+
+    }
+    
+
+
+
+    /* menu qury */
+    nav ul li {
+        display: none;
+    }
+
+    #menu nav h2 {
+        font-size: 20px;
+        margin-top: 1px;
+        margin-left: 7px;
+    }
+   
+
+
+
+
+    /* button que esta no menu hamurguer */
+
+    aside div .btn-subscript {
+        margin-right: 80px;
+        margin-bottom: -5px;
+        margin-left: 7px;
+        padding: 13px 18px;
+        border-radius: 20px;
+         font-size: 11px;
+         
+    }
+   
+
+
+
+
+   /*  */
+   .main-sobre .img  {
+       padding: 10px;
+       padding-top: 10px;
+       
+   }
+   .main-sobre {
+     
+    padding: -0px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+   }
+    
+    
+    .main-sobre .text-sobre {
+        width: 100%;
+        height: 90%;
+      
+        
+    }
+
+
+
+
+.main-sobre .foto-legenda {
+    margin-top: -100px;
+}
+
+
+   .background-sobr-n .text-sobre {
+       margin: 5px;
+      
+   }
+
+   .background-sobr-n .text-sobre h2 {
+       font-size: 30px;
+   }
+   .background-sobr-n .text-sobre h5 {
+       font-size: 18px;
+   }
+   .background-sobr-n .text-sobre p {
+       font-size: 13px;
+       padding: 0;
+       width: 100%;
+   }
+   .background-sobr-n .text-sobre button {
+       padding: 8px;
+       font-size: 11px;
+       margin-top: -15px;
+       margin-bottom: 10px;
+   }
+
+
+
+
+
+
+
+
+
+    /*  */
+   
+    #artigo3 .container-servicos{
+        padding: 30px 0;
+        background-color: rgba(0, 0, 0, 0.712);
+    }
+  
+    .container-servicos .titulo h2 {
+        font-size: 30px;
+       
+    }
+    .container-servicos .card {
+        border-radius: 10px;
+        width: 350px;
+    }
+    .container-servicos .card h5 {
+        font-size: 16px;
+        padding-top: 10px;
+    }
+    .container-servicos .card p {
+        text-indent: 20px;
+        font-size: 13px;
+        padding-top: 0px;
+        align-items: center;
+        text-align: center;
+       
+    }
+    .container-servicos .card .btn-servicos {
+        padding: 7px;
+        margin-top: -20;
+        margin-bottom: 7px;
+    }
+    
+
+
+
+
+ /*  */
+ #artigo4 .me-contacte p{
+     padding: 10px;
+     font-size: 15px;
+     align-items: center;
+     justify-content: center;
+     text-align: center;
+ }
+ #artigo4 .me-contacte button {
+     font-size: 10px;
+     padding: 8px;
+ }
+
+
+ /*  */
+ #artigo4 footer h6 {
+     font-size: 23px;
+ }
+ #artigo4 footer p {
+     font-size: 12px;
+     
+ }
+ #artigo4 footer .redes-socias a {
+     width: 20px;
+     height: 20px;
+ }
+ #artigo4 footer .redes-socias img {
+     width: 20px;
+ }
+
+ /*  */
+
+ #menu aside .icon-menu img {
+     margin-right: 50px;
+     
+ }
+
+ 
+}
+@media screen and (max-width:410px){
+   
+    .icon-menu .mobile-menu {
+        cursor: pointer;
+        padding-right: 50px;
+        margin-top: 20px;
+    }
+    .icon-menu .menu {
+       display: block;
+
+    }
+    #barra-menu ul li {
+        height: 100vh;
+        z-index: 1;
+    }
+    #barra-menu {
+        opacity: 1;
+    }
+    /* apresentacao */
+    .apresentacao {
+    
+        padding-top: 45%;
+    }
+    .apresentacao h4 {
+        font-size: 11px;
+    }
+    .apresentacao h1{
+          font-size: 35px;
+    }
+    .apresentacao h3 {
+        font-size: 17px;
+    }
+
+    .background-sobr-n {
+       height: 700px;
+        margin-top: -90px;
+        margin-bottom: 0px;
+      
+    }
+
+
+    .container-btn form {
+        padding: 14px 30px;
+
+    }
+    
+
+
+
+    /* menu qury */
+    nav ul li {
+        display: none;
+    }
+
+    #menu nav h2 {
+        font-size: 20px;
+        margin-top: 1px;
+        margin-left: 7px;
+    }
+    #menu nav div .btn-subscript {
+      display: none;
+    }
+
+
+
+
+    /* button que esta no menu hamurguer */
+
+    aside div .btn-subscript {
+        margin-right: 80px;
+        margin-bottom: -5px;
+        margin-left: 7px;
+        padding: 13px 18px;
+        border-radius: 20px;
+         font-size: 11px;
+         
+    }
+   
+
+
+
+
+   /*  */
+   .main-sobre .img  {
+       padding: 10px;
+       padding-top: 10px;
+       
+   }
+   .main-sobre {
+     
+    padding: -0px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+   }
+    
+    
+    .main-sobre .text-sobre {
+        width: 100%;
+        height: 90%;
+      
+        
+    }
+
+
+
+
+.main-sobre .foto-legenda {
+    margin-top: -100px;
+}
+
+
+   .background-sobr-n .text-sobre {
+       margin: 5px;
+      
+   }
+
+   .background-sobr-n .text-sobre h2 {
+       font-size: 30px;
+   }
+   .background-sobr-n .text-sobre h5 {
+       font-size: 18px;
+   }
+   .background-sobr-n .text-sobre p {
+       font-size: 13px;
+       padding: 0;
+       width: 100%;
+   }
+   .background-sobr-n .text-sobre button {
+       padding: 8px;
+       font-size: 11px;
+       margin-top: -15px;
+       margin-bottom: 10px;
+   }
+
+
+
+
+
+
+
+
+
+    /*  */
+   
+    #artigo3 .container-servicos{
+        height: 100%;
+        padding: 30px 0;
+        background-color: rgba(0, 0, 0, 0.712);
+    }
+  
+    .container-servicos .titulo h2 {
+        font-size: 30px;
+       
+    }
+    .container-servicos .card {
+        border-radius: 10px;
+        width: 350px;
+    }
+    .container-servicos .card h5 {
+        font-size: 16px;
+        padding-top: 10px;
+    }
+    .container-servicos .card p {
+        text-indent: 20px;
+        font-size: 13px;
+        padding-top: 0px;
+        align-items: center;
+        text-align: center;
+       
+    }
+    .container-servicos .card .btn-servicos {
+        padding: 7px;
+        margin-top: -20;
+        margin-bottom: 7px;
+    }
+    
+
+
+
+
+ /*  */
+ #artigo4 .me-contacte p{
+     padding: 10px;
+     font-size: 15px;
+     align-items: center;
+     justify-content: center;
+     text-align: center;
+ }
+ #artigo4 .me-contacte button {
+     font-size: 10px;
+     padding: 8px;
+ }
+
+
+ /*  */
+ #artigo4 footer h6 {
+     font-size: 23px;
+ }
+ #artigo4 footer p {
+     font-size: 12px;
+     
+ }
+ #artigo4 footer .redes-socias a {
+     width: 20px;
+     height: 20px;
+ }
+ #artigo4 footer .redes-socias img {
+     width: 20px;
+ }
+
+ /*  */
+
+ #menu aside .icon-menu img {
+     margin-right: 50px;
+     
+ }
+
+ 
+}
+@media screen and (max-width:700px){
+    .icon-menu .mobile-menu {
+        cursor: pointer;
+       padding-right: 70px;
+        margin-top: 20px;
+    }
+
+    .icon-menu .menu {
+       display: block;
+
+    }
+    #barra-menu ul li {
+        height: 100vh;
+        z-index: 1;
+        
+        
+    }
+    /* apresentacao */
+    .apresentacao {
+    
+        padding-top: 45%;
+    }
+    .apresentacao h4 {
+        font-size: 11px;
+    }
+    .apresentacao h1{
+          font-size: 35px;
+    }
+    .apresentacao h3 {
+        font-size: 17px;
+    }
+
+    .background-sobr-n {
+       height: 700px;
+        margin-top: -90px;
+        margin-bottom: 0px;
+      
+    }
+
+
+    .container-btn form {
+        padding: 14px 30px;
+
+    }
+    
+
+
+
+    /* menu qury */
+    nav ul li {
+        display: none;
+    }
+
+    #menu nav h2 {
+        font-size: 20px;
+        margin-top: 1px;
+        margin-left: 7px;
+    }
+    #menu nav div .btn-subscript {
+     
+    }
+
+
+
+
+    /* button que esta no menu hamurguer */
+
+    aside div .btn-subscript {
+        margin-right: 80px;
+        margin-bottom: -5px;
+        margin-left: 7px;
+        padding: 13px 18px;
+        border-radius: 20px;
+         font-size: 11px;
+         
+    }
+   
+
+
+
+
+   /*  */
+   .main-sobre .img  {
+       padding: 10px;
+       padding-top: 10px;
+       
+   }
+   .main-sobre {
+     
+    padding: -0px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+   }
+    
+    
+    .main-sobre .text-sobre {
+        width: 100%;
+        height: 90%;
+      
+        
+    }
+
+
+
+
+.main-sobre .foto-legenda {
+    
+}
+
+
+   .background-sobr-n .text-sobre {
+       margin: 5px;
+      
+   }
+
+   .background-sobr-n .text-sobre h2 {
+       font-size: 30px;
+   }
+   .background-sobr-n .text-sobre h5 {
+       font-size: 18px;
+   }
+   .background-sobr-n .text-sobre p {
+       font-size: 13px;
+       padding: 0;
+       width: 100%;
+   }
+   .background-sobr-n .text-sobre button {
+       padding: 8px;
+       font-size: 11px;
+       margin-top: -15px;
+       margin-bottom: 10px;
+   }
+
+
+
+
+
+
+
+
+
+    /* conteiner de nossos servicos */
+   
+    #artigo3 .container-servicos{
+        padding: 30px 0;
+        background-color: rgba(0, 0, 0, 0.712);
+    }
+  
+    .container-servicos .titulo h2 {
+        font-size: 30px;
+       
+    }
+    .container-servicos .card {
+        border-radius: 10px;
+        width: 350px;
+    }
+    .container-servicos .card h5 {
+        font-size: 16px;
+        padding-top: 10px;
+    }
+    .container-servicos .card p {
+        text-indent: 20px;
+        font-size: 13px;
+        padding-top: 0px;
+        align-items: center;
+        text-align: center;
+       
+    }
+    .container-servicos .card .btn-servicos {
+        padding: 7px;
+        margin-top: -20;
+        margin-bottom: 7px;
+    }
+    
+
+
+
+
+ /*  */
+ #artigo4 .me-contacte p{
+     padding: 10px;
+     font-size: 15px;
+     align-items: center;
+     justify-content: center;
+     text-align: center;
+ }
+ #artigo4 .me-contacte button {
+     font-size: 10px;
+     padding: 8px;
+ }
+
+
+ /*  */
+ #artigo4 footer h6 {
+     font-size: 23px;
+ }
+ #artigo4 footer p {
+     font-size: 12px;
+     
+ }
+ #artigo4 footer .redes-socias a {
+     width: 20px;
+     height: 20px;
+ }
+ #artigo4 footer .redes-socias img {
+     width: 20px;
+ }
+
+ /*  */
+
+ #menu aside .icon-menu img {
+     margin-right: 50px;
+     
+ }
+
+ 
+}
+@media screen and (max-width:950px){
+
+ 
+    .icon-menu .mobile-menu {
+        cursor: pointer;
+      
+        margin-top: 20px;
+    }
+    .icon-menu .menu {
+       display: block;
+
+    }
+    #barra-menu ul li {
+        height: 100vh;
+        z-index: 1;  
+    }
+    #barra-menu{
+        display: inline;
+        opacity: 1;
+       
+        
+    }
+    
+    /* apresentacao */
+    
+     
+    .apresentacao {
+    
+        padding-top: 45%;
+    }
+    .apresentacao h4 {
+        font-size: 11px;
+    }
+    .apresentacao h1{
+          font-size: 35px;
+    }
+    .apresentacao h3 {
+        font-size: 17px;
+    }
+
+    .background-sobr-n {
+       height: 700px;
+      
+        margin-bottom: 0px;
+      
+    }
+
+
+    .container-btn form {
+        padding: 14px 30px;
+
+    }
+    
+
+
+
+    /* menu qury */
+    nav ul li {
+        
+    }
+
+    #menu nav h2 {
+        font-size: 20px;
+        margin-top: 1px;
+        margin-left: 7px;
+    }
+    #menu nav div .btn-subscript {
+      
+    }
+
+
+
+
+    /* button que esta no menu hamurguer */
+
+    aside div .btn-subscript {
+        margin-right: 80px;
+        margin-bottom: -5px;
+        margin-left: 7px;
+        padding: 13px 18px;
+        border-radius: 20px;
+         font-size: 11px;
+         
+    }
+   
+
+
+
+
+   /*  area main area que fala sobre mim*/
+   .main-sobre .img  {
+       padding: 10px;
+       padding-top: 10px;
+       
+   }
+   .main-sobre {
+     
+    padding: -0px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+   }
+    
+    
+    .main-sobre .text-sobre {
+        width: 100%;
+        height: 90%;
+      
+        
+    }
+
+
+
+
+.main-sobre .foto-legenda {
+    margin-top: -100px;
+}
+
+
+   .background-sobr-n .text-sobre {
+       margin: 5px;
+      
+   }
+
+   .background-sobr-n .text-sobre h2 {
+       font-size: 30px;
+   }
+   .background-sobr-n .text-sobre h5 {
+       font-size: 18px;
+   }
+   .background-sobr-n .text-sobre p {
+       font-size: 13px;
+       padding: 0;
+       width: 100%;
+   }
+   .background-sobr-n .text-sobre button {
+       padding: 8px;
+       font-size: 11px;
+       margin-top: -15px;
+       margin-bottom: 10px;
+   }
+
+
+
+
+
+
+
+
+
+    /*  */
+   
+    #artigo3 .container-servicos{
+        padding: 30px 0;
+        background-color: rgba(0, 0, 0, 0.712);
+    }
+  
+    .container-servicos .titulo h2 {
+        font-size: 30px;
+        height: 40px;
+        
+      
+       
+    }
+    .container-servicos .card {
+        border-radius: 10px;
+        width: 350px;
+    }
+    .container-servicos .card h5 {
+        font-size: 16px;
+        padding-top: 10px;
+    }
+    .container-servicos .card p {
+        text-indent: 20px;
+        font-size: 13px;
+        padding-top: 0px;
+        align-items: center;
+        text-align: center;
+       
+    }
+    .container-servicos .card .btn-servicos {
+        padding: 7px;
+        margin-top: -20;
+        margin-bottom: 7px;
+    }
+    
+
+
+
+
+ /*  */
+ #artigo4 .me-contacte p{
+     padding: 10px;
+     font-size: 15px;
+     align-items: center;
+     justify-content: center;
+     text-align: center;
+ }
+ #artigo4 .me-contacte button {
+     font-size: 10px;
+     padding: 8px;
+ }
+
+
+ /*  */
+ #artigo4 footer h6 {
+     font-size: 23px;
+ }
+ #artigo4 footer p {
+     font-size: 12px;
+     
+ }
+ #artigo4 footer .redes-socias a {
+     width: 20px;
+     height: 20px;
+ }
+ #artigo4 footer .redes-socias img {
+     width: 20px;
+ }
+
+ /*  */
+
+ #menu aside .icon-menu img {
+     margin-right: 50px;
+     
+ }
+
+ 
+}
+@media screen and (max-width:1372px){
+    .icon-menu .mobile-menu {
+        cursor: pointer;
+      
+        margin-top: 20px;
+    }
+    .icon-menu .menu {
+       display: block;
+    }
+    .barra-menu{
+       background-color: #043f8b;
+       
+    }
+    #barra-menu ul li {
+        height: 100vh;
+        z-index: 1;
+        
+        
+    }
+    /* apresentacao */
+    .apresentacao {
+    
+        padding-top: 45%;
+    }
+    .apresentacao h4 {
+        font-size: 11px;
+    }
+    .apresentacao h1{
+          font-size: 35px;
+    }
+    .apresentacao h3 {
+        font-size: 17px;
+    }
+
+
+
+
+    .container-btn form {
+        padding: 14px 30px;
+
+    }
+    
+
+
+
+    /* menu qury */
+    nav ul li {
+       
+    }
+
+    #menu nav h2 {
+        font-size: 20px;
+        margin-top: 1px;
+        margin-left: 7px;
+    }
+    #menu nav div .btn-subscript {
+      display: none;
+    }
+
+
+
+
+    /* button que esta no menu hamurguer */
+
+    aside div .btn-subscript {
+        margin-right: 80px;
+        margin-bottom: -5px;
+        margin-left: 7px;
+        padding: 13px 18px;
+        border-radius: 20px;
+         font-size: 11px;
+         
+    }
+   
+
+
+
+
+   /* area que falo sobre mim */
+   .main-sobre .img  {
+       padding: 10px;
+     
+       
+   }
+   .main-sobre {
+     
+    padding: 0px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+   
+   }
+    
+    
+    .main-sobre .text-sobre {
+        width: 80%;
+        height: 100%;
+        margin-top: 20px;
+        z-index: 1;
+        
+        
+    }
+    article {
+        width: 100%;
+        height: 100%;
+        display: block;
+      
+    }
+
+
+
+
+.main-sobre .foto-legenda {
+   margin-top: 50px;
+}
+
+
+
+   .background-sobr-n .text-sobre h2 {
+       font-size: 30px;
+   }
+   .background-sobr-n .text-sobre h5 {
+       font-size: 18px;
+   }
+   .background-sobr-n .text-sobre p {
+       font-size: 13px;
+       padding: 0;
+       width: 100%;
+   }
+   .background-sobr-n .text-sobre button {
+       padding: 8px;
+       font-size: 11px;
+       margin-top: -15px;
+       margin-bottom: 10px;
+   }
+  
+
+
+
+
+
+
+
+
+
+
+    /*  */
+   
+    #artigo3 .container-servicos{
+       height: 100%;
+        padding: 30px 0;
+        background-color: rgba(0, 0, 0, 0.712);
+    }
+  
+    .container-servicos .titulo h2 {
+        font-size: 30px;
+       
+    }
+    .container-servicos .card {
+        border-radius: 10px;
+        width: 350px;
+    }
+    .container-servicos .card h5 {
+        font-size: 16px;
+        padding-top: 10px;
+    }
+    .container-servicos .card p {
+        text-indent: 20px;
+        font-size: 13px;
+        padding-top: 0px;
+        align-items: center;
+        text-align: center;
+       
+    }
+    .container-servicos .card .btn-servicos {
+        padding: 7px;
+        margin-top: -20;
+        margin-bottom: 7px;
+    }
+    
+
+
+
+
+ /*  */
+ #artigo4 .me-contacte p{
+     padding: 10px;
+     font-size: 15px;
+     align-items: center;
+     justify-content: center;
+     text-align: center;
+ }
+ #artigo4 .me-contacte button {
+     font-size: 10px;
+     padding: 8px;
+ }
+
+
+ /*  */
+ #artigo4 footer h6 {
+     font-size: 23px;
+ }
+ #artigo4 footer p {
+     font-size: 12px;
+     
+ }
+ #artigo4 footer {
+     height: 310px;
+ }
+ #artigo4 footer .redes-socias a {
+     width: 20px;
+     height: 20px;
+ }
+ #artigo4 footer .redes-socias img {
+     width: 20px;
+ }
+
+ /*  */
+
+ #menu aside .icon-menu img {
+     margin-right: 50px;
+     
+ }
+
+ 
+}
+/* a sima midia qury */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* artigo 1 artigo 1 artigo 1 artigo 1 artigo 1 artigo 1 artigo 1 artigo 1 artigo 1 artigo 1 artigo 1 artigo 1*/
+
+
+
+/* minha apresentacao */
+.background {
+    background-image: url(../_imagens/pexels-mikhail-nilov-9159001.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    
+    /* imagem do fundo principal */
+  }
+
+.apresentacao {
+    
+    padding-top: 25%;
+    padding-left: 8%;
+    transform: translateY(-50);
+}
+h4 {
+    width: 180px;
+    padding: 10px;
+    color: rgb(228, 228, 228);
+    letter-spacing: 2px;
+    background-color: rgba(0, 0, 0, 0.164);
+    
+
+}
+h1 {
+    color: white;
+    margin: 20px 0px 20px;
+    font-size: 75px;
+}
+
+h3 {
+    width: 100%;
+    color: #fff;
+    font-size: 25px;
+    margin-bottom: 50px;
+    background-color: rgba(0, 0, 0, 0.164);
+}
+
+.container-btn {
+    margin-left: 8%;
+    width: 100%;
+}
+.container-btn form{
+  width: 300px;
+  max-width: 100%;
+  
+}
+
+.container-btn form input:first-child {
+    display: inline-block;
+    width: 100%;
+    padding: 14px 130px 14px 15px;
+    border-radius: 30px;
+    outline: none;
+
+}
+.container-btn form input:last-child {
+    
+   z-index: 1;
+    outline: none;
+    padding: 10px 30px;
+    position: absolute;
+    margin-left: -120px;
+    margin-top: 5px;
+    
+    
+    border: none;
+    border-radius: 30px;
+    background-color:  rgb(0, 47, 255);
+    color: white;
+    box-shadow: 0px 0px 15px #858585;
+    
+  
+   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Artigo 2 Artigo 2  Artigo 2  Artigo 2  Artigo 2  Artigo 2  Artigo 2  Artigo 2  Artigo 2  Artigo 2  Artigo 2  Artigo 2  Artigo 2   */
+
+
+
+/* section/////////////////////// sobre mim */
+
+.background-sobr-n {
+    background: linear-gradient(45deg, rgb(170, 170, 170), #858585, #043f8b);
+   
+    width: 100%;
+    height: auto;
+    padding: 100px 0px;
+   
+    
+}
+
+img {
+    width: 100%;
+    
+}
+
+.main-sobre figure {
+    
+    max-width: 650px;
+    
+    height: auto;
+}
+.main-sobre figure.foto-legenda {
+    position: relative;
+    border: 8px solid white;
+    box-shadow: 1px 1px 5px  white;
+   
+
+}
+.main-sobre figure.foto-legenda img {
+    width: 100%;
+    height: 100%;
+   
+}
+.main-sobre figure.foto-legenda figcaption {
+    position: absolute;
+    top: -0px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    opacity: 0;
+    transition: 0.7s;
+
+}
+.main-sobre figure.foto-legenda figcaption:hover {
+    opacity: 1;
+    transition: 0.7s;
+}
+.main-sobre figure.foto-legenda figcaption h4 {
+    width: 100%;
+    color: white;
+    padding: 20px 20px;
+    background-color: rgba(179, 13, 91, 0.233);
+    border-radius: 30px;
+}
+
+/* texto  */
+.text-sobre {
+    width: 570px; 
+     background: linear-gradient(45deg, #ff008c79, #36036869 ,#00000067);
+     padding: 50px;
+    float: right;
+    flex-wrap: wrap;
+    
+}
+.text-sobre h2{
+    color: white;
+    font-size: 75px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+
+}
+.text-sobre h5 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #fff;
+    letter-spacing: 2px;
+    font-size: 22px;
+    margin-bottom: 25px;
+    text-transform: capitalize;
+}
+.text-sobre p {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: rgb(219, 219, 219);
+    letter-spacing: 2px;
+    line-height: 28px;
+    font-size: 18px;
+    margin-bottom: 45px;
+}
+.text-sobre button {
+    background-color: rgb(0, 47, 255);
+    color: white;
+    text-transform: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 13px 20px;
+    border-radius: 30px;
+    transition: 0.4s;
+}
+.text-sobre button a {
+    color: white;
+    text-decoration: none;
+}
+.text-sobre button:hover {
+    background-color: transparent;
+    border: 2px solid  rgb(0, 238, 255);
+    cursor: pointer;
+}
+
+
+.main-sobre {
+    display: flex; 
+    align-items: center ;
+    justify-content: space-around;
+    width: 100%;
+    height: auto;
+    margin: auto;
+    flex-wrap: wrap;
+    
+    /* teg a sima e a largura da nossa div */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Artigo 3  Artigo 3 Artigo 3 Artigo 3 Artigo 3 Artigo 3 Artigo 3 Artigo 3 Artigo 3 Artigo 3 Artigo 3 Artigo 3 Artigo 3 */
+
+
+
+/* container-servicos" */
+
+.container-servicos {
+   background-color: rgba(0, 0, 0, 0.623);
+   
+   width: 100%;
+   height: 100%;
+   padding: 110px 0;
+   
+  
+   
+}
+
+.titulo h2 {
+    color: #fff;
+    font-size: 70px;
+    width: 100%;
+    margin: 10px 0;
+    margin-top: 20px;
+    text-align: center;
+    font-family: monospace;
+}
+
+.caixas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #191919;
+    height: 340px;
+    width: 340px;
+    border-radius: 4px;
+    margin:  17px 50px 17px 50px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+  
+   
+}
+
+
+
+
+
+
+/*  card de js javascript */
+
+
+
+/* o card */
+.card-js {
+    background-color: #191919;
+    height: 0px;
+    width: 0px;
+    border-radius: 4px;
+    margin:  17px 20px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    transition: 0.4s;
+   
+}
+
+
+
+
+
+/* before de card-js que e o triangulo a sima de botas +-x */
+.card-js::before {
+   content: '+';
+   color: white;
+   font-size: 2.4em;
+   position: absolute;
+   bottom: -16px;
+   width: 40px;
+   height: 40px;
+   background-color: #043f8b;
+   border-radius: 5px;
+   transform: rotate(45deg);
+   opacity: 0;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+}
+.card-js.active::before {
+    opacity: 1;
+}
+
+
+
+
+
+
+
+/* configuracao de botao de + de abrir e fechar active, hover , before que e o +, */
+.verm {
+    position: absolute;
+    min-width: 50px;
+    height: 50px;
+    background-color: #4b7088;
+    border-radius: 50%;
+    cursor: pointer;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    transition: 0.4s;
+    box-shadow: 1px 1px 15px white;
+}
+
+
+
+/*  hover do botao */
+.verm:hover {
+    background-color: #006eff9f;
+    transition: 0.1s;
+    padding: 20px 10px;
+}
+
+.verm::before {
+    content: 'js';
+    font-size: 2.7em;
+    color: white;
+    transition: 0.4s;
+    
+
+}
+.verm::before:hover {
+    padding: 5px;
+}
+
+
+.card-js.active {
+    width: 340px;
+    height: 340px;
+    transition: 0.4s;
+    
+}
+
+
+.card-js.active .verm {
+    bottom: -76px;
+    transform: rotate(360deg);
+}
+
+.card-js.active .card-js {
+    opacity: 1;
+}
+
+
+/* configurando a segunda div de content, e content quqe contem active */
+.card-js .content {
+    min-width: 340px;
+    opacity: 0;
+    transform: scale(1);
+}
+.card-js.active .content {
+    opacity: 1;
+    transition-delay: 0.4s;
+}
+
+
+.card-js i {
+    font-size: 50px;
+    display: block;
+    text-align: center;
+    margin: 25px 0px;
+}
+
+.card-js  h5 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+    color: white;
+    font-size: 23px;
+    margin-bottom: 15px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
+.card-js p {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 14px;
+    color: rgb(255, 235, 255);
+    font-size: 16px;
+    line-height: 27px;
+    margin-bottom: 25px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
+.card-js .btn-servicos {
+    display: none;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* animacao de  Borda dinamica!  */
+
+.card::before, .card::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    width: calc(340px + 30px);
+    height: calc(340px + 30px);
+    background: linear-gradient(45deg, #e1e2eb, #1e2b8b8f,  #13131d, #6e71a1, #377a83, #4b7088,  #3c2faf);
+    background-size: 300%;
+    animation: AnimarBorda 12s linear alternate infinite;
+    border-radius: 4px;
+}
+
+@keyframes  AnimarBorda {
+    0%{
+        background-position: 0;
+    }
+    100%{
+        background-position: 100%;
+    }
+}
+
+
+div::after {
+    filter: blur(50px);
+}
+
+
+/*  a sima animacao de  Borda dinamica!  */
+
+
+
+
+
+
+.card i {
+    font-size: 50px;
+    display: block;
+    text-align: center;
+    margin: 25px 0px;
+}
+
+.card  h5 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+    color: white;
+    font-size: 23px;
+    margin-bottom: 15px;
+}
+
+.card p {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 14px;
+    color: rgb(255, 235, 255);
+    font-size: 16px;
+    line-height: 27px;
+    margin-bottom: 25px;
+}
+
+.card .btn {
+    border: none;
+    margin-top: -25px;
+}
+.btn:hover {
+    background-color: transparent;
+    border: 2px solid rgb(0, 47, 255);
+    cursor: pointer;
+}
+.btn-servicos {
+    margin-top: -10px;
+    background-color:  rgb(0, 47, 255);
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px 15px  20px;
+    border-radius: 30px;
+    
+}
+
+.btn-servicos:hover {
+    background-color: none;
+}
+
+/* Efeito hover no botao */
+
+
+/*  Efeito hover no botao */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Artigo 4 ultimo footer  Artigo 4 ultimo footer  Artigo 4 ultimo footer  Artigo 4 ultimo footerArtigo 4 ultimo footer Artigo 4 ultimo footer */
+
+
+
+
+/* footer /////////*/
+
+.me-contacte {
+    width: 100%;
+    height: 270px;
+    background-color: #191919;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.me-contacte p {
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+.btn-contacto {
+    margin: 0px;
+    background-color:  rgb(0, 47, 255);
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px 15px  20px;
+    border-radius: 30px;
+    
+}
+.btn-contacto:hover {
+    background-color: none;
+}
+
+
+
+footer{
+    position: relative;
+    width: 100%;
+    height: 380px;
+    background-color: #101010;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+footer h6{
+   font-size: 35px;
+   color:  #fff;
+
+}
+
+footer p {
+    font-size: 15px;
+    color: #fff;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    line-height: 20px;
+
+}
+
+
+.redes-socias{
+    display: flex;
+}
+.redes-socias img {
+    width: 30px;
+}
+
+.redes-socias a {
+    background-color: rgb(0, 47, 255);
+    width: 45px;
+    height: 45px ;
+    padding: 15px;
+    border-radius: 50%;
+    margin: 22px  10px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+
+
+}
+.redes-socias a:hover {
+    transform: scale(1.2);
+    transition: 0.4s;
+}
+
+
+
+.end {
+    position: relative;
+    margin-top: 35px;
+   
+}
+.end p {
+    font-size: 14px;
+    font-style: italic;
+}
+
+
+
+
+
+
